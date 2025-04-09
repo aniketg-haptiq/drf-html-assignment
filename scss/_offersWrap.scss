@@ -167,6 +167,9 @@ margin-bottom: 2px;
     .offersHeaderWrap{
         gap: 20px;
     }
+    .offerCard:last-child{
+        margin-bottom: 0px;
+    }
     .offersHeader 
     {
         h2{
@@ -181,7 +184,7 @@ margin-bottom: 2px;
         margin-bottom: 20px;
     }
     .offersHeaderWrap{
-        padding: 16px 24px;
+        padding: 16px 24px 32px 24px;
         border-radius: 8px;
         border: 1px solid #DAE4E9;
     }
@@ -211,6 +214,10 @@ margin-bottom: 2px;
     }
     .offerCardBody{
         width: 516px;
+    }
+    .offersHeader{
+        box-shadow: 2px 2px 50px 0px #8596C340;
+
     }
 
     
