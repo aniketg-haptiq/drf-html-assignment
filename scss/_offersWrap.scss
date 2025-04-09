@@ -1,0 +1,218 @@
+.offers{
+    margin-bottom: 20px;
+}
+.offersHeaderWrap{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+.offersHeader{
+    h2{
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 24px;
+
+    }
+}
+
+.offerCard{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 16px 12px;
+    color: #ffffff;
+    box-shadow: 2px 2px 50px -4px #8596C342;
+}
+
+.offerCardUpper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.offerCardHeader{
+    display: flex;
+    gap: 12px;
+}
+.offerCardTag{
+    height: 40px;
+    width: 32px;
+}
+
+.offerCardImg{
+    height: 89px;
+    width: 89px;
+    border-radius: 8px;
+    overflow: hidden;
+
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.sportsbookName{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #666666;
+    margin-bottom: 8px;
+}
+.offerNumber{
+font-size: 17px;
+line-height: 24px;
+color: #000000;
+margin-bottom: 2px;
+}
+.bonusType{
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.offerCardBody{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.offerContent{
+    display: flex;
+    gap: 8px;
+    p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+
+    span{
+        font-weight: 700;
+    }
+
+    }
+}
+
+.tickMark{
+    height: 20px;
+    width: 20px;
+}
+
+.offerButtonsWrap{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .offerBtn{
+        width: 100%;
+        height: 40px;
+        border-radius: 4px;
+        padding: 10px 51px;
+        border: 1px solid #0066CC;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+        background-color: #ffffff;
+        color: #0066CC;
+
+    }
+    .playNowBtn{
+        background-color: #0066CC;
+        color: #ffffff;
+    }
+}
+
+.offerCardNumber{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 1px 10px;
+    background: radial-gradient(50% 50% at 50% 50%, #ABD3FF 0%, #DCEDFF 100%);
+
+
+    span{
+        position: absolute;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 100%;
+        color: #000000;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .offerCardUpper{
+        flex-direction: row;
+    }
+    .offerCardHeader{
+        width: 50%;
+        gap: 24px;
+    }
+    .offerCardBody{
+        width: 50%;
+    }
+    .offerButtonsWrap{
+        flex-direction: row;
+
+
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .offersHeaderWrap{
+        gap: 20px;
+    }
+    .offersHeader 
+    {
+        h2{
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    .offerCard{
+        box-shadow: none;
+        padding: 16px 24px;
+        border: 1px solid #DAE4E9;
+        margin-bottom: 20px;
+    }
+    .offersHeaderWrap{
+        padding: 16px 24px;
+        border-radius: 8px;
+        border: 1px solid #DAE4E9;
+    }
+    .offerCard{
+        flex-direction: row;
+        gap: 32px;
+    }
+    .offerButtonsWrap{
+        flex-direction: column;
+    }
+    .sportsbookName{
+        margin-bottom: 12px;
+    }
+    .offerNumber{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 0px;
+        display: inline-block;
+    }
+    .bonusType{
+        margin-bottom: 0px;
+        display: inline-block;
+    }
+    .offerCardContent{
+        width: 280px;
+    }
+    .offerCardBody{
+        width: 516px;
+    }
+
+    
+    
+}

@@ -1,0 +1,130 @@
+.sportsBookReview{
+    margin-bottom: 20px;
+}
+
+.sportsBookReviewWrap {
+    text-align: center;
+
+    h2{
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    }
+}
+
+.booksReviewWrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 24px;
+    margin-bottom: 16px;
+}   
+
+.bookReviwCard{
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #DAE4E9;
+    box-shadow: 2px 2px 50px 0px #8596C340;
+
+}
+.bookReviwCard{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.bookNameWrap{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    span{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        color: #0066CC;
+    }
+    .reviewArrow{
+        height: 24px;
+        width: 24px;
+    }
+}
+.bookReviewInfo{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #222222;
+    text-align: left;
+
+    span{
+        font-weight: 600;
+    }
+}
+
+.bookRatingWrap{
+    padding-top: 24px;
+    border-top: 1px solid #DAE4E9;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.bookImgWrap{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    background-color: #C1A970;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bookImg{
+    height: 30px;
+    width: 42px;
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+.bookRating{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+
+    h3{
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 24px;
+        text-align: left;
+    }
+}
+.ratings{
+    display: flex;
+    gap: 8px;
+}
+.ratingStarsWrap{
+    display: flex;
+    gap: 4px;
+}
+.ratingStars{
+    height: 16px;
+    width: 16px;
+}
+.ratingNumber{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #666666;
+
+}
+
+@media screen and (min-width: 768px)
+{
+    .booksReviewWrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+}

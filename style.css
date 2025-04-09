@@ -1,0 +1,791 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 1349px;
+    padding: 0px 32px;
+  }
+}
+.sportsBetting {
+  margin-bottom: 20px;
+}
+
+.sportsBettingContainer {
+  padding-top: 20px;
+}
+
+.blueCard {
+  padding: 16px 12px 24px 12px;
+  border-radius: 8px;
+  background: linear-gradient(134.42deg, #004FA1 16.18%, #17315B 100%);
+  box-shadow: 2px 2px 50px 0px rgba(133, 150, 195, 0.2509803922);
+}
+
+.blueCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #ffffff;
+}
+
+.blueCardHeader h2 {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+.blueCardHeader p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.blueCardBody h3 {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+.blueCardBody #sportsbooks {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #787878;
+}
+.blueCardBody #sportsbooks .dropdownName {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  position: absolute;
+}
+
+.dropdownWrap {
+  width: 100%;
+  height: 36px;
+  border-radius: 8px;
+  padding: 0 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #DAE4E9;
+}
+
+@media screen and (min-width: 768px) {
+  .blueCard {
+    padding: 16px 16px 24px 16px;
+  }
+  .blueCardContent {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .blueCardHeader {
+    max-width: 404px;
+  }
+  .dropdownWrap {
+    width: 240px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blueCard {
+    padding: 16px 24px;
+  }
+  .blueCardHeader {
+    max-width: 594px;
+  }
+  .blueCardBody h3 {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+.offers {
+  margin-bottom: 20px;
+}
+
+.offersHeaderWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.offersHeader h2 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.offerCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 16px 12px;
+  color: #ffffff;
+  box-shadow: 2px 2px 50px -4px rgba(133, 150, 195, 0.2588235294);
+}
+
+.offerCardUpper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.offerCardHeader {
+  display: flex;
+  gap: 12px;
+}
+
+.offerCardTag {
+  height: 40px;
+  width: 32px;
+}
+
+.offerCardImg {
+  height: 89px;
+  width: 89px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.offerCardImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sportsbookName {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+.offerNumber {
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.bonusType {
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.offerCardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.offerContent {
+  display: flex;
+  gap: 8px;
+}
+.offerContent p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.offerContent p span {
+  font-weight: 700;
+}
+
+.tickMark {
+  height: 20px;
+  width: 20px;
+}
+
+.offerButtonsWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.offerButtonsWrap .offerBtn {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  padding: 10px 51px;
+  border: 1px solid #0066CC;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  background-color: #ffffff;
+  color: #0066CC;
+}
+.offerButtonsWrap .playNowBtn {
+  background-color: #0066CC;
+  color: #ffffff;
+}
+
+.offerCardNumber {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 1px 10px;
+  background: radial-gradient(50% 50% at 50% 50%, #ABD3FF 0%, #DCEDFF 100%);
+}
+.offerCardNumber span {
+  position: absolute;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .offerCardUpper {
+    flex-direction: row;
+  }
+  .offerCardHeader {
+    width: 50%;
+    gap: 24px;
+  }
+  .offerCardBody {
+    width: 50%;
+  }
+  .offerButtonsWrap {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .offersHeaderWrap {
+    gap: 20px;
+  }
+  .offersHeader h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .offerCard {
+    box-shadow: none;
+    padding: 16px 24px;
+    border: 1px solid #DAE4E9;
+    margin-bottom: 20px;
+  }
+  .offersHeaderWrap {
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #DAE4E9;
+  }
+  .offerCard {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .offerButtonsWrap {
+    flex-direction: column;
+  }
+  .sportsbookName {
+    margin-bottom: 12px;
+  }
+  .offerNumber {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 0px;
+    display: inline-block;
+  }
+  .bonusType {
+    margin-bottom: 0px;
+    display: inline-block;
+  }
+  .offerCardContent {
+    width: 280px;
+  }
+  .offerCardBody {
+    width: 516px;
+  }
+}
+.sportsNews {
+  margin-bottom: 20px;
+}
+
+.sportsNewsWrap {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sportsNewsBox {
+  padding: 12px 16px;
+}
+
+.sportsNewsContainer {
+  padding: 0 0;
+}
+
+.sportsNewsHeading {
+  height: 36px;
+  width: 100%;
+  background: linear-gradient(134.42deg, #004FA1 16.18%, #17315B 100%);
+  padding: 6px 16px;
+}
+.sportsNewsHeading h2 {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.mainNewsImgWrap {
+  height: 274px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.mainNewsImgWrap img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mainNews .newsAuthorWrap {
+  margin-bottom: 4px;
+}
+
+.newsAuthor {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+.newsAuthor a {
+  color: #0066CC;
+  font-weight: 600;
+}
+.newsAuthor span {
+  color: #666666;
+}
+
+.newsCard .newsAuthor {
+  font-size: 12px;
+}
+
+.mainNewsHeading {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.mainNewsContent {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+.mainNewsContent span a {
+  font-weight: 700;
+  color: #0066CC;
+}
+
+.mainNews {
+  border-bottom: 1px solid #DAE4E9;
+}
+
+.newsCard {
+  padding: 12px 0px;
+  border-bottom: 1px solid #DAE4E9;
+  display: flex;
+  gap: 8px;
+}
+
+.newsCardImgWrap {
+  width: 110px;
+  height: 82px;
+  overflow: hidden;
+}
+.newsCardImgWrap img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.newsCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+}
+.newsCardContent h4 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.viewMoreBox {
+  text-align: center;
+}
+.viewMoreBox a {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #0066CC;
+}
+
+.newsCardWrapTab {
+  display: none;
+}
+
+.newsCardImgWrap.showImg {
+  height: 64px;
+  width: 85px;
+  border-radius: 4px;
+}
+
+.newsBox {
+  box-shadow: 2px 2px 50px 0px rgba(133, 150, 195, 0.2588235294);
+}
+
+@media screen and (min-width: 768px) {
+  .newsCardWrapTab {
+    display: block;
+    width: 50%;
+  }
+  .newsCardWrapMob {
+    display: none;
+  }
+  .sportsNewsBox {
+    padding: 16px;
+  }
+  .sportsNewsWrap {
+    margin-bottom: 18px;
+    flex-direction: row;
+    gap: 12px;
+  }
+  .newsCard {
+    padding: 8px 0px;
+  }
+  .mainNewsImgWrap {
+    height: 276px;
+  }
+  .mainNews {
+    width: 50%;
+  }
+  .main .newsAuthorWrap {
+    margin-bottom: 8px;
+  }
+  .mainNewsHeading {
+    margin-bottom: 8px;
+  }
+  .mainNewsContent {
+    margin-bottom: 0px;
+  }
+  .mainNews {
+    border-bottom: none;
+  }
+  .newsCard:last-child {
+    border-bottom: none;
+  }
+  .newsCard:first-child {
+    padding-top: 0px;
+  }
+  .sportsNewsContainer {
+    padding: 0 16px;
+  }
+  .newsBox {
+    box-shadow: 2px 2px 50px 0px rgba(133, 150, 195, 0.2588235294);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #DAE4E9;
+  }
+  .sportsNewsHeading h2 {
+    font-size: 19px;
+  }
+  .viewMoreBox a {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+.sportsBookReview {
+  margin-bottom: 20px;
+}
+
+.sportsBookReviewWrap {
+  text-align: center;
+}
+.sportsBookReviewWrap h2 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.booksReviewWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.bookReviwCard {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #DAE4E9;
+  box-shadow: 2px 2px 50px 0px rgba(133, 150, 195, 0.2509803922);
+}
+
+.bookReviwCard {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.bookNameWrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.bookNameWrap span {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0066CC;
+}
+.bookNameWrap .reviewArrow {
+  height: 24px;
+  width: 24px;
+}
+
+.bookReviewInfo {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #222222;
+  text-align: left;
+}
+.bookReviewInfo span {
+  font-weight: 600;
+}
+
+.bookRatingWrap {
+  padding-top: 24px;
+  border-top: 1px solid #DAE4E9;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.bookImgWrap {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  background-color: #C1A970;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookImg {
+  height: 30px;
+  width: 42px;
+}
+.bookImg img {
+  height: 100%;
+  width: 100%;
+}
+
+.bookRating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+.bookRating h3 {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.ratings {
+  display: flex;
+  gap: 8px;
+}
+
+.ratingStarsWrap {
+  display: flex;
+  gap: 4px;
+}
+
+.ratingStars {
+  height: 16px;
+  width: 16px;
+}
+
+.ratingNumber {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #666666;
+}
+
+@media screen and (min-width: 768px) {
+  .booksReviewWrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+.sportsBookReviewGrid {
+  margin-bottom: 20px;
+}
+
+.reviewBookName {
+  height: 32px;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #F7FCFF;
+  margin-bottom: 12px;
+}
+.reviewBookName h2 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #0066CC;
+}
+
+.reviewBookRatingWrap {
+  display: flex;
+  padding: 0 16px;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.reviewTableTitle {
+  display: none;
+}
+
+.ratingsWrap {
+  display: flex;
+  gap: 4px;
+}
+
+.reviewBookHighlightWrap {
+  padding: 0 16px;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.reviewTitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #787878;
+  min-width: 106px;
+}
+
+.ratingNumberOnly {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.highlightPara {
+  color: #000000;
+}
+
+.reviewGridWrapper {
+  margin-bottom: 12px;
+}
+
+.reviewGridBox {
+  padding-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviewTableTitle {
+    display: flex;
+    background-color: #F7FCFF;
+    border-bottom: 1px solid #EAECF0;
+  }
+  .reviewTableTitle div {
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+  }
+  .bookColumn {
+    width: 159px;
+  }
+  .reviewBookName {
+    max-width: 159px;
+    background-color: #ffffff;
+    padding: 16px;
+    margin-bottom: 0;
+    height: 100%;
+  }
+  .reviewBookName h2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ratingColumn, .reviewBookRatingWrap {
+    min-width: 174px;
+    padding: 16px;
+    margin-bottom: 0px;
+  }
+  .reviewTitle {
+    display: none;
+  }
+  .singleReviewGridCard {
+    display: flex;
+    border-bottom: 1px solid #EAECF0;
+  }
+  .reviewGridBox {
+    padding: 16px;
+  }
+  .highlightPara {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .reviewBookHighlightWrap {
+    padding: 16px;
+    margin-bottom: 0px;
+  }
+  .reviewGridWrapper {
+    border-radius: 6px;
+    border: 1px solid #EAECF0;
+    margin-bottom: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,106 @@
+.sportsBetting{
+    margin-bottom: 20px;
+}
+.sportsBettingContainer{
+    padding-top: 20px;
+    
+}
+.blueCard
+{
+    padding: 16px 12px 24px 12px ;
+    border-radius: 8px;
+    background: linear-gradient(134.42deg, #004FA1 16.18%, #17315B 100%);
+    box-shadow: 2px 2px 50px 0px #8596C340;
+
+}
+
+.blueCardContent{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #ffffff;
+}
+
+.blueCardHeader {
+    h2{
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    }
+
+    p{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    }
+
+    
+}
+
+.blueCardBody{
+    h3{
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    }
+
+    #sportsbooks{
+        height: 100%;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        outline: none; 
+        color: #787878;
+
+    .dropdownName{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    }
+    }
+}
+
+.dropdownWrap{
+    width: 100%;
+    height: 36px;
+    border-radius: 8px;
+    padding: 0 14px;
+    background-color: #FFFFFF;
+    border: 1px solid #DAE4E9;
+}
+
+@media screen and (min-width: 768px) {
+    .blueCard{
+        padding: 16px 16px 24px 16px;
+    }
+    .blueCardContent{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .blueCardHeader{
+        max-width: 404px;
+    }
+    .dropdownWrap{
+        width: 240px;
+    }
+   
+}
+
+@media screen and (min-width: 1024px){
+    .blueCard{
+        padding: 16px 24px;
+    }
+    .blueCardHeader{
+        max-width: 594px;
+    }
+    .blueCardBody h3{
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+}

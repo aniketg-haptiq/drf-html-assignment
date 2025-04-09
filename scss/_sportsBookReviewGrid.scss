@@ -1,0 +1,126 @@
+.sportsBookReviewGrid{
+    margin-bottom: 20px;
+}
+.reviewBookName{
+    height: 32px;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #F7FCFF;
+    margin-bottom: 12px;
+
+    h2{
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #0066CC;
+    }
+}
+.reviewBookRatingWrap{
+display: flex;   
+padding: 0 16px; 
+gap: 24px;
+margin-bottom: 8px;
+}
+.reviewTableTitle{
+    display: none;
+}
+.ratingsWrap{
+    display: flex;
+    gap: 4px;
+}
+.reviewBookHighlightWrap{
+    padding: 0 16px; 
+    display: flex;
+    gap: 24px;
+    margin-bottom: 12px;
+}
+.reviewTitle{
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #787878;
+min-width: 106px;
+}
+.ratingNumberOnly{
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+color: #000000;
+}
+.highlightPara{
+    color: #000000;
+}
+.reviewGridWrapper{
+    margin-bottom: 12px;
+}
+.reviewGridBox{
+    padding-bottom: 12px;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .reviewTableTitle{
+        display: flex;
+        background-color: #F7FCFF;
+        border-bottom: 1px solid #EAECF0;
+
+
+        div{
+            padding: 12px 16px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+    .bookColumn{
+        width: 159px;
+    }
+    .reviewBookName{
+        max-width: 159px;
+        background-color: #ffffff;
+        padding: 16px;
+        margin-bottom: 0;
+        height: 100%;
+
+        h2{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        }
+    }
+    .ratingColumn, .reviewBookRatingWrap{
+        min-width: 174px;
+        padding: 16px;
+        margin-bottom: 0px;
+    }
+    .reviewTitle{
+        display: none;
+    }
+    .singleReviewGridCard{
+        display: flex;
+        border-bottom: 1px solid #EAECF0;
+    }
+    .reviewGridBox{
+        padding: 16px;
+    }
+    .highlightPara{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+    .reviewBookHighlightWrap{
+        padding: 16px;
+        margin-bottom: 0px;
+    }
+    .reviewGridWrapper{
+        border-radius: 6px;
+        border: 1px solid #EAECF0;
+        margin-bottom: 16px;
+    }
+   
+   
+    
+}
