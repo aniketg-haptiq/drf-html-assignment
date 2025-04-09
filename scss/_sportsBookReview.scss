@@ -128,3 +128,12 @@
 
     }
 }
+
+@media screen and (min-width: 1024px)
+{
+    .booksReviewWrapper{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+    
+}
