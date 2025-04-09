@@ -124,3 +124,19 @@ color: #000000;
    
     
 }
+
+@media screen and (min-width: 1024px){
+    
+    .bookColumn{
+        width: 342px;
+    }
+    .reviewBookName{
+        max-width: 342px;
+    }
+    .ratingColumn, .reviewBookRatingWrap {
+    
+    min-width: 194px;
+}
+    
+    
+}

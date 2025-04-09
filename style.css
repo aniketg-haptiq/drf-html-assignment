@@ -803,5 +803,16 @@ a {
     margin-bottom: 16px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .bookColumn {
+    width: 342px;
+  }
+  .reviewBookName {
+    max-width: 342px;
+  }
+  .ratingColumn, .reviewBookRatingWrap {
+    min-width: 194px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
